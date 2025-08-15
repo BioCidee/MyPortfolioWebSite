@@ -1,48 +1,19 @@
 body{
     margin: 0;
-
     background-color: #124864;
-
     color: #051029;
-}
 
-header{
-    background-color: #051029;
-}
-
-header nav ul{
-    color: #EFBF8C;
-    list-style: none;
-
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-
-    padding: 0;
-    margin: 0;
-}
-
-header nav{
-    height: 4em;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.button{
-    text-decoration: none;
-    font-style: normal;
-    color: #3E7184;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.2em;
 }
 
 footer{
-    ackground-color: #051029;
+    background-color: #051029;
 }
 
 h1, h2, h3, h4{
     color: #2EB2B9;
+    font-family: "Titan One", sans-serif;
 }
 
