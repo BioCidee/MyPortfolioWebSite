@@ -41,11 +41,11 @@ header nav{
 
     padding: 4px;
     border-radius: 20px;
-    transition: color 0.2s; /* joli effet de transition */
+    transition: all 0.2s; /* joli effet de transition */
 
-    
-}
-
-.button:hover{
-    color: white;
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.15);
+        color: white;
+    }
 }

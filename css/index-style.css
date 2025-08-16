@@ -38,10 +38,26 @@ h1, h2, h3, h4{
     gap: 0;
     padding: 0;
     margin: 0;
+    color: #39ebf4;
+}
+
+.myName ul li h3{
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.myName h4{
+    font-size: 3em;
+}
+
+.myName em{
+    font-style: normal;
+    color: white;
 }
 
 .buttonApropos{
-    margin-top: 4em;
+    margin-bottom: 4em;
 
     display: flex;
     flex-direction: row;
@@ -52,4 +68,55 @@ main .button{
     background-color: #051029;
     padding-left: 2em;
     padding-right: 2em;
+}
+
+.buttonApropos a{
+    font-style: normal;
+    text-decoration: none;
+    color: #2EB2B9;
+    background-color:#051029;
+    padding: 10px;
+    border-radius: 20px;
+    transition: all 0.2s; /* joli effet de transition */
+
+    transform: scale(1);
+    &:hover{
+        transform: scale(1.15);
+        color: white;
+    }
+}
+
+.petitePresentation{
+    background-color: #051029;
+    color: #39ebf4;
+    width: 50%;
+    margin: auto;
+    padding: 1%;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+.logoLanguage{
+    margin: 10%;
+    gap: 4em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.devWeb, .devJV{
+    text-align: center;
+    background-color: #051029;
+
+    padding: 20px;
+    border-radius: 10px;
+
+    color: #124864;
 }
