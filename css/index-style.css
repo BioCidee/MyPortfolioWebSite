@@ -74,14 +74,18 @@ main .button{
     font-style: normal;
     text-decoration: none;
     color: #2EB2B9;
-    background-color:#051029;
+    background-color:rgba(5, 16, 41, 0);
     padding: 10px;
     border-radius: 20px;
-    transition: all 0.2s; /* joli effet de transition */
+    transition: transform 0.2s, background-color 0.3s 0.1s, color 0.4s; 
+    transition-timing-function: cubic-bezier(.78,-0.04,.44,.93);
+    border: #051029 solid 3px;
+
 
     transform: scale(1);
     &:hover{
         transform: scale(1.15);
+        background-color: rgba(5, 16, 41, 1);;
         color: white;
     }
 }
