@@ -1,6 +1,12 @@
 body {
   margin: auto;
   font-size: 1.2em;
+
+  background-color: #2d2d2d;
+}
+
+body p {
+  color: white;
 }
 
 h1 {
@@ -17,6 +23,9 @@ h1 {
 }
 
 .portfolio {
+  width: 90%;
+  margin: auto;
+
   display: flex;
   flex-direction: column;
   align-items: center;
