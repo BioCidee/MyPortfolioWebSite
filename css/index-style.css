@@ -6,7 +6,7 @@ body {
 }
 
 /*All p color */
-body p {
+p, body, header, footer {
   color: #D0F4EA;
   font-family: "Roboto", sans-serif;
 }
@@ -30,8 +30,8 @@ header ol {
   gap: 100px;
 }
 
-.presentation {
-  background: red;
+.top {
+
 }
 
 h1, h2, h3 {
@@ -44,7 +44,39 @@ h1 {
   color: #B1CC74
 }
 
-.mes-projets {
+.project {
+  position: inherit;
+  width: 300px;
+  height: 400px;
+  background: #829399;
 
+  border: 2px solid #E8FCC2;
+  border-radius: 10%;
+
+  overflow: scroll;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 0.2s;
+}
+
+.project:hover {
+  background: green;
+
+  transform: scale(1.08);
+}
+
+.mes-projets {
+  background: red;
+
+  padding: 3em;;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
 }
 
