@@ -9,6 +9,24 @@ body p {
   color: white;
 }
 
+header {
+  background: red;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header ol {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
 h1 {
   font-size: 2em;
   color: yellow;
@@ -30,3 +48,4 @@ ul{
 .presentation {
   background-color: gray;  
 }
+
