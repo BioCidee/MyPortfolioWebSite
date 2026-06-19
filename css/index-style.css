@@ -1,8 +1,11 @@
 body {
-  margin: 0;
+
   font-size: 1.2em;
   background-color: #545F66;
   font-size: 1.2em;
+
+  padding-left: 3em;
+  padding-right: 3em;
 }
 
 /*All p color */
@@ -14,6 +17,18 @@ p, body, header, footer {
 header nav {
   background: #829399;
 
+  width: 95%;
+
+  border: 1px solid black;
+  border-radius: 2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -78,5 +93,16 @@ h1 {
   flex-direction: row;
   justify-content: center;
   gap: 2em;
+}
+
+#title {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: all 0.8s cubic-bezier(0.87, 0, 0.13, 1);
+}
+
+
+#title:hover {
+  text-decoration-color: #B1CC74;
 }
 
