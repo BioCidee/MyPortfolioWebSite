@@ -100,8 +100,19 @@ button:hover {
   list-style: none;
 }
 
+.competence img{
+  width: 20px;
+  height: 20px;
+  color: white;
+}
+
 .competence li {
   border: 1px solid #2a2a2a;
   border-radius: 1em;
   padding: 1em;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2em;
 }
