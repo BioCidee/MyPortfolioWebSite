@@ -1,0 +1,40 @@
+header nav {
+  background: #0a0a0a;
+
+  border: 1px solid #2a2a2a;
+  color: #888888;
+
+  width: 100%;
+  padding: 1em 2em 1em 2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1{
+    color: #f0ede8;
+}
+
+header a{
+    color: #888888;
+    text-decoration: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header ol {
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
