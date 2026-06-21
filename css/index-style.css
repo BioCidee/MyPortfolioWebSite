@@ -1,7 +1,7 @@
 body {
 
   font-size: 1.2em;
-  background-color: #545F66;
+  background-color: #E8EDDF;
   font-size: 1.2em;
 
   padding-left: 3em;
@@ -10,17 +10,16 @@ body {
 
 /*All p color */
 p, body, header, footer {
-  color: #D0F4EA;
+  color: #333533;
   font-family: "Roboto", sans-serif;
 }
 
 header nav {
-  background: #829399;
+  background: #F5CB5C;
 
-  width: 95%;
+  width: 98%;
 
   border: 1px solid black;
-  border-radius: 2em;
 
   display: flex;
   flex-direction: row;
@@ -45,53 +44,58 @@ header ol {
   gap: 100px;
 }
 
-.top {
-
-}
-
-h1, h2, h3 {
+h2, h3 {
   font-family: "Tomorrow", sans-serif;
-  color: #B1CC74
+  font-size: 1.2em;
+  color: #242423;
 }
 
 h1 {
+  font-family: "Tomorrow", sans-serif;
   font-size: 2em;
-  color: #B1CC74
+  color: #242423;
 }
 
+
+/* Card */
 .card {
   position: inherit;
-  width: 300px;
+  width: 400px;
   height: 400px;
-  background: #829399;
+  background: #F5CB5C;
 
-  border: 2px solid #E8FCC2;
-  border-radius: 10%;
-  padding: 0.2em;
+  border: 2px solid #333533;
+  border-radius: 3%;
+  padding: 1em;
 
   display: flex;
   flex-direction: column;
   align-items: center;
 
   transition: all 0.4s;
-  rotate: 20deg;
 }
 
-.card:hover {
+#card:hover {
   background: green;
   transform: scale(1.4);
   z-index: 1;
-  rotate: 359deg;
 }
 
-.card button{
+#card button{
   width: 50%;
   height: 10%;
 }
 
 .mes-projets {
-  background: red;
+  padding: 3em;;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+.mes-projets div {
   padding: 3em;;
 
   display: flex;
@@ -99,15 +103,3 @@ h1 {
   justify-content: center;
   gap: 2em;
 }
-
-#title {
-  text-decoration: underline;
-  text-decoration-color: transparent;
-  transition: all 0.8s cubic-bezier(0.87, 0, 0.13, 1);
-}
-
-
-#title:hover {
-  text-decoration-color: #B1CC74;
-}
-
