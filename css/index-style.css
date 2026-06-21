@@ -3,9 +3,10 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  
   font-size: 1.2em;
   background-color: #0a0a0a;
-  font-size: 1.2em;
 
   padding-left: 3em;
   padding-right: 3em;
@@ -17,18 +18,59 @@ span {
 
 /*All p color */
 p, body, header, footer {
-  color: #333533;
+  color: #888888;
   font-family: "Roboto", sans-serif;
 }
 
 h2, h3 {
-  font-family: "Tomorrow", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.2em;
-  color: #242423;
+  color: #f0ede8;
 }
 
 h1 {
-  font-family: "Tomorrow", sans-serif;
-  font-size: 2em;
-  color: #242423;
+  font-family: 'Inter', sans-serif;
+  font-size: 3em;
+  color: #f0ede8;
+}
+
+.presentation{
+  margin: 10%;   
+}
+
+.presentation-all{
+  display: flex;
+  flex-direction: row;
+  
+  gap: 2em;
+}
+
+.presentation-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-top-red {
+  width: 300px;
+  text-align: center;
+  padding: 0.4em 0.4em 0.4em 0.4em;
+  margin-bottom: 2em;
+  border: 1px solid #b91c1c;
+  color: #b91c1c;
+  border-radius: 9px;
+}
+
+.presentation-button {
+  margin-top: 2em;
+}
+
+button {
+  background-color: #0a0a0a;
+  color: #f0ede8;
+
+  font-size: 0.8em;
+
+  padding: 1em;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
 }
