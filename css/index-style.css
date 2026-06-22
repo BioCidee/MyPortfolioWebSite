@@ -108,6 +108,7 @@ button:hover {
 
 .competence li {
   border: 1px solid #2a2a2a;
+  background: #141414;
   border-radius: 1em;
   padding: 1em;
 
@@ -116,3 +117,43 @@ button:hover {
   align-items: center;
   gap: 0.2em;
 }
+
+.myProject {
+  margin-bottom: 2em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em;
+  gap: 2em;
+}
+
+.card img {
+  border-radius: 1em 1em 0 0;
+  border: 0px solid transparent;
+
+  background-color: #b91c1c;
+}
+
+.card {
+  width: 250px;
+  height: 300px;
+  background-color: #111111;
+
+  border: 1px solid #2a2a2a;
+  border-radius: 1em;
+}
+
+.cardInside {
+  padding: 1em;
+}
+
+.InProgress p{
+  color: #555555;
+}
+
+.InProgress h3{
+  color: #888888;
+}
+
+
