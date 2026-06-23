@@ -19,12 +19,17 @@ span {
 /*All p color */
 p, body, header, footer {
   color: #888888;
-  font-family: "Roboto", sans-serif;
 }
 
 h2, h3 {
   font-family: 'Inter', sans-serif;
   font-size: 1.2em;
+  color: #f0ede8;
+}
+
+h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
   color: #f0ede8;
 }
 
@@ -35,7 +40,7 @@ h1 {
 }
 
 .presentation{
-  margin: 10%;   
+  padding: 4em 0;  
 }
 
 .presentation-all{
@@ -119,8 +124,6 @@ button:hover {
 }
 
 .myProject {
-  margin-bottom: 2em;
-
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,7 +135,7 @@ button:hover {
   border-radius: 1em 1em 0 0;
   border: 0px solid transparent;
 
-  background-color: #b91c1c;
+  background-color: #1a0a0a;
 }
 
 .card {
@@ -159,10 +162,13 @@ button:hover {
 .Apropos {
   display: flex;
   flex-direction: row;
+
+  width: 90%;
+  gap: 1em;
 }
 
-.Apropos p{
-  width: 70%;
+.textPresentation {
+  text-align:left;
 }
 
 .case {
@@ -174,5 +180,22 @@ button:hover {
   padding: 1em;
   margin-bottom: 1em;
 }
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 2em;
+}
+
+footer p {
+  color: #555555;
+}
+
+footer a{
+  text-decoration: none;
+  color: #555555;
+} 
 
 
