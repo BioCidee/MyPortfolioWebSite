@@ -156,4 +156,23 @@ button:hover {
   color: #888888;
 }
 
+.Apropos {
+  display: flex;
+  flex-direction: row;
+}
+
+.Apropos p{
+  width: 70%;
+}
+
+.case {
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+
+  background: #111111;
+
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
 
