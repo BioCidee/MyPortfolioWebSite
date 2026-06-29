@@ -40,12 +40,13 @@ h1 {
 }
 
 .presentation{
-  padding: 4em 0;  
+  padding: 4em 0 0 4em;  
 }
 
 .presentation-all{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   
   gap: 2em;
 }
@@ -164,9 +165,7 @@ button:hover {
 .Apropos {
   display: flex;
   flex-direction: row;
-
-  width: 90%;
-  gap: 1em;
+  justify-content: space-between;
 }
 
 .textPresentation {
