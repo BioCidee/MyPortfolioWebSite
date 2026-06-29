@@ -53,6 +53,8 @@ h1 {
 .presentation-left {
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
 }
 
 .presentation-top-red {
