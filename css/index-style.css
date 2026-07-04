@@ -178,7 +178,7 @@ button:hover {
   opacity: 0;
   scale: 0.7;
 
-  transition: opacity ;
+  transition: opacity 0.2s;
 }
 
 .card:hover button {
