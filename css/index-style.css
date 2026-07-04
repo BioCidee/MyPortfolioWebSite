@@ -143,14 +143,28 @@ button:hover {
 
 .card {
   width: 250px;
-  height: 300px;
+  height: 400px;
   background-color: #111111;
 
   border: 1px solid #2a2a2a;
   border-radius: 1em;
+
+  transition: all 0.2s;
+
+}
+
+.card button {
+  scale: 0.7;
+}
+ 
+.card:hover {
+  scale: 150%;
+  border: 1px solid #b91c1c;
 }
 
 .cardInside {
+  display: flex;
+  flex-direction: column;
   padding: 1em;
 }
 
