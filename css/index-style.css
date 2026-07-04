@@ -150,11 +150,19 @@ button:hover {
   border-radius: 1em;
 
   transition: all 0.2s;
-
 }
 
 .card button {
   scale: 0.7;
+}
+
+a button {
+  transition: all 0.2s;
+}
+
+a button:hover {
+  scale: .9;
+  box-shadow: 0 0 15px rgba(185, 28, 28, 0.6);
 }
  
 .card:hover {
@@ -165,6 +173,7 @@ button:hover {
 .cardInside {
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 1em;
 }
 

@@ -64,7 +64,9 @@ textarea {
 }
 
 button {
-  width: 100px;
+  display: flow-root;
+
+  width: 200px;
   height: 60px;
 
   font-size: large;
@@ -74,10 +76,13 @@ button {
   color: #b91c1c;
   border-radius : 1em;
   padding: 1em;
+
+  transition:scale 0.2s ;
 }
 
 button:hover {
+  scale: 1.04;
+  color: #f0ede8;
   background-color: #2a2a2a;
-  border : 1px solid #111111;
-
+  border : 1px solid #b91c1c;
 }
