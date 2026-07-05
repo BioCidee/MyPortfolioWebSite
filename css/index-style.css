@@ -68,6 +68,36 @@ h1 {
   border-radius: 9px;
 }
 
+@keyframes profilePictureHorizontalGhost {
+  0%   { transform: translateX(0px);}
+  50%  { transform: translateX(-22px);}
+  100% { transform: translateX(0px);}
+}
+
+@keyframes profilePictureVerticalGhost {
+  0%   { transform: translateY(0px);}
+  50%  { transform: translateY(-15px);}
+  100% { transform: translateY(0px);}
+}
+
+.presentation-photo {
+  animation: profilePictureVerticalGhost 3s ease-in-out infinite;
+}
+
+.presentation-photo img {
+ animation: profilePictureHorizontalGhost 5s ease-in-out infinite;
+}
+
+@keyframes monAnimation {
+  0%   { box-shadow: 0 0 15px 5px rgba(185, 28, 28, 0.4); }
+  50%  { box-shadow: 0 0 25px 10px rgba(185, 28, 28, 0.8); }
+  100% { box-shadow: 0 0 15px 5px rgba(185, 28, 28, 0.4); }
+}
+
+.presentation-top-red {
+  animation: monAnimation 2s ease-in-out infinite;
+}
+
 .presentation-button {
   margin-top: 2em;
 }
