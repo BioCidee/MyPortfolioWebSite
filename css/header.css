@@ -31,6 +31,8 @@ header {
   top: 0;
   position: sticky ;
   background-color: #0a0a0a;
+
+  z-index: 10;
 }
 
 header ol {

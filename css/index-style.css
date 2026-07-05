@@ -1,3 +1,13 @@
+:root {
+  --textColor : #f0ede8;
+  --textImportantColor: #b91c1c;
+  --textNormalColor: #888888;
+  --borderColor: #2a2a2a;
+  --backgroundColor: #0a0a0a;
+  --secondBackgroundColor: #111111;
+  --textDisabledColor: #555555; 
+}
+
 * {
   margin: 0;
 }
@@ -6,37 +16,37 @@ body {
   font-family: 'Inter', sans-serif;
   
   font-size: 1.2em;
-  background-color: #0a0a0a;
+  background-color: var(--backgroundColor);
 
   padding-left: 3em;
   padding-right: 3em;
 }
 
 span {
-  color: #b91c1c;
+  color: var(--textImportantColor);
 }
 
 /*All p color */
 p, body, header, footer {
-  color: #888888;
+  color: var(--textNormalColor);
 }
 
 h2, h3 {
   font-family: 'Inter', sans-serif;
   font-size: 1.2em;
-  color: #f0ede8;
+  color: var(--textColor);
 }
 
 h4 {
   font-family: 'Inter', sans-serif;
   font-size: 1em;
-  color: #f0ede8;
+  color: var(--textColor);
 }
 
 h1 {
   font-family: 'Inter', sans-serif;
   font-size: 3em;
-  color: #f0ede8;
+  color: var(--textColor);
 }
 
 .presentation{
@@ -63,8 +73,8 @@ h1 {
   text-align: center;
   padding: 0.4em 0.4em 0.4em 0.4em;
   margin-bottom: 2em;
-  border: 1px solid #b91c1c;
-  color: #b91c1c;
+  border: 1px solid var(--textImportantColor);
+  color: var(--textImportantColor);
   border-radius: 9px;
 }
 
@@ -103,26 +113,26 @@ h1 {
 }
 
 button {
-  background-color: #0a0a0a;
-  color: #f0ede8;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
 
   font-size: 0.8em;
 
   padding: 1em;
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--borderColor);
   border-radius: 10px;
 
   transition: color 1s;
 }
 
 button:hover {
-  background-color: #141414;
+  background-color: var(--secondBackgroundColor);
 }
 
 .line{
   width: 100%;
   height: 1;
-  border: 0.2px solid #2a2a2a;
+  border: 0.2px solid var(--borderColor);
 
   margin: 2em 0 2em 0;
 }
@@ -145,8 +155,8 @@ button:hover {
 }
 
 .competence li {
-  border: 1px solid #2a2a2a;
-  background: #141414;
+  border: 1px solid var(--borderColor);
+  background: var(--secondBackgroundColor);
   border-radius: 1em;
   padding: 1em;
 
@@ -168,7 +178,7 @@ button:hover {
   border-radius: 1em 1em 0 0;
   border: 0px solid transparent;
 
-  background-color: #1a0a0a;
+  background-color: var(--backgroundColor);
 }
 
 .card {
@@ -177,9 +187,9 @@ button:hover {
 
   width: 250px;
   height: 400px;
-  background-color: #111111;
+  background-color: var(--secondBackgroundColor);
 
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--borderColor);
   border-radius: 1em;
 
   transition: all 0.2s;
@@ -190,9 +200,8 @@ button:hover {
   width: 100%;
   height: 100%;
   top: 0;
-  top: 0;
   content: "";
-  background-color: red;
+  background-color: var(--textImportantColor);
 
   transform: translateY(+100%);
   transition: all 0.8s;
@@ -220,7 +229,7 @@ button:hover {
  
 .card:hover {
   scale: 150%;
-  border: 1px solid #b91c1c;
+  border: 1px solid var(--textImportantColor);
   z-index: 1;
 }
 
@@ -232,7 +241,7 @@ button:hover {
 }
 
 .InProgress p{
-  color: #555555;
+  color: var(--textDisabledColor);
 }
 
 .InProgress h3{
@@ -250,10 +259,10 @@ button:hover {
 }
 
 .case {
-  border: 1px solid #2a2a2a;
+  border: 1px solid var(--borderColor) ;
   border-radius: 10px;
 
-  background: #111111;
+  background: var(--secondBackgroundColor);
 
   padding: 1em;
   margin-bottom: 1em;
@@ -268,12 +277,12 @@ footer {
 }
 
 footer p {
-  color: #555555;
+  color: var(--textNormalColor);;
 }
 
 footer a{
   text-decoration: none;
-  color: #555555;
+  color: var(--textNormalColor);;
 } 
 
 
