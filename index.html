@@ -48,10 +48,10 @@
 
         </div>
         
-        
         <div class="presentation-button">
-          <button>Voir mes jeux</button>
+          <button id="SeeGames">Voir mes jeux</button>
           <button>Itch.io</button>
+          <button id="theme">Theme</button>
         </div>
       </section>
 
@@ -79,7 +79,8 @@
               <h3>Project Mars</h3>
               <span>RTS - Unity</span>
               <p><br>RTS, défense contre des aliens</p>
-              <a href="https://biocidee.itch.io/project-mars"><button>Découvrir</button></a>
+              <!-- <a href="https://biocidee.itch.io/project-mars"><button>Découvrir</button></a> -->
+               <button id="buttonProjectMars">Découvrir</button>
             </div>
           </div>
           <div class="RunMars card">
@@ -88,7 +89,8 @@
               <h3>Run on Mars</h3>
               <span>Infinite Runner - Unity</span>
               <p><br>Infinite Runner on Mars, with 2 gameplay</p>
-              <a href="https://biocidee.itch.io/mars-run"><button>Découvrir</button></a>
+              <!-- <a href="https://biocidee.itch.io/mars-run"><button>Découvrir</button></a> -->
+               <button id="buttonMarsRun">Découvrir</button>
             </div>
           </div>
           <div class="PowerOfDestruction card">
@@ -97,7 +99,8 @@
               <h3>Power Of D.</h3>
               <span>Horror - Unity</span>
               <p><br>Your giant ! Destroy all the city !</p>
-              <a href="https://biocidee.itch.io/power-of-destruction"><button>Découvrir</button></a>
+              <!-- <a href="https://biocidee.itch.io/power-of-destruction"><button>Découvrir</button></a> -->
+               <button id="buttonPowerOfD">Découvrir</button>
             </div>
           </div>
           <div class="InProgress card">
@@ -149,6 +152,14 @@
       </div>
       <p>© 2025 · [ BIOCIDE ]</p>
     </footer>
+
+    <div id="overlay">
+      <div id="popup">
+        <h3 id="popup-titre"></h3>
+        <p id="popup-description"></p>
+        <button id="popup-fermer">Fermer</button>
+      </div>
+    </div>
 
     <!-- Java -->
      <script src="/js/test.js"></script>
