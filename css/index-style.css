@@ -233,6 +233,14 @@ button:hover {
   z-index: 1;
 }
 
+.card-GameStatus {
+  border: 1px solid var(--textImportantColor);
+  background-color: var(--textImportantColor);
+  color: var(--textColor);
+  border-radius: 5px;
+  padding: 0.2em;
+}
+
 .cardInside {
   display: flex;
   flex-direction: column;
@@ -285,6 +293,8 @@ footer a{
   color: var(--textNormalColor);;
 } 
 
+
+
 #overlay {
   position: fixed;
   top: 0;
@@ -295,8 +305,8 @@ footer a{
   background-color: rgba(0,0,0,0.8);
   z-index: 100;
 
-  display: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -306,4 +316,7 @@ footer a{
   border: 1px solid var(--borderColor);
   border-radius: 10px;
   padding: 1em;
+
+  display: flex;
+  flex-direction: row;
 }
