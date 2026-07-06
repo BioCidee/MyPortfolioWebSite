@@ -8,10 +8,6 @@
   --textDisabledColor: #555555; 
 }
 
-.themeClair {
-  --textImportantColor: green;
-}
-
 * {
   margin: 0;
 }
