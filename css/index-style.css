@@ -200,23 +200,24 @@ button:hover {
   width: 100%;
   height: 100%;
   top: 0; 
+  left: 0;
   content: "";
   background-color: var(--textImportantColor);
 
-  transform: translateY(+100%);
+  transform: translateY(-100%);
   transition: all 0.8s;
 }
 
 .card:hover::before {
-  transform: translateY(78%);
+  transform: translateY(80%);
   z-index: 2;
 }
 
-.card button {
+.buttonDiscover {
   position: relative;
   opacity: 0;
   scale: 0.7;
-
+  
   transition: opacity 0.2s;
 }
 
@@ -226,18 +227,34 @@ button:hover {
 
   transition: opacity 2s 1s;
 }
+
+@keyframes hoverAnimation {
+  0%   { box-shadow: 0 0 0px 0px rgba(185, 28, 28, 0.4); }
+  50%  { box-shadow: 0 0 25px 10px rgba(185, 28, 28, 0.8); }
+  100% { box-shadow: 0 0 0px 0px rgba(185, 28, 28, 0.4); }
+}
  
 .card:hover {
+  animation: hoverAnimation 2s ease-in-out 1;
   scale: 150%;
   border: 1px solid var(--textImportantColor);
   z-index: 1;
+}
+
+.card-GameStatus {
+  border: 1px solid var(--textImportantColor);
+  background-color: var(--textImportantColor);
+  color: var(--textColor);
+  border-radius: 5px;
+  padding: 0.2em;
 }
 
 .cardInside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .InProgress p{
@@ -295,15 +312,36 @@ footer a{
   background-color: rgba(0,0,0,0.8);
   z-index: 100;
 
-  display: none;
-  flex-direction: column;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
 #popup {
+  overflow: hidden;
+}
+
+.popup {
   background: var(--secondBackgroundColor);
   border: 1px solid var(--borderColor);
   border-radius: 10px;
   padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1em;
+
+  padding: 3em;
+}
+
+#popup-image {
+  border: 1px solid var(--borderColor);
+  border-radius: 5px;
+}
+
+.popup p {
+  width: 400px;
 }

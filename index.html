@@ -51,7 +51,6 @@
         <div class="presentation-button">
           <button id="SeeGames">Voir mes jeux</button>
           <button>Itch.io</button>
-          <button id="theme">Theme</button>
         </div>
       </section>
 
@@ -76,36 +75,56 @@
           <div class="ProjectMars card">
             <img src="image/ProjectMars.png" width="100%" height="40%">
             <div class="cardInside">
+              <p class="card-GameStatus">In Progress</p><br>
               <h3>Project Mars</h3>
               <span>RTS - Unity</span>
               <p><br>RTS, défense contre des aliens</p>
               <!-- <a href="https://biocidee.itch.io/project-mars"><button>Découvrir</button></a> -->
-               <button id="buttonProjectMars">Découvrir</button>
+               <button class="buttonDiscover"
+                data-title="Project Mars" 
+                data-description="Projet de jeu, vous avez demvant vous un petit monde créer procéduralement, ou vous devez placer votre vaisseau et vos mines afin
+                                  de récupérer des ressources qui vous permettrons de poser des défenses contre des vaisseaux aliens vous en veulent !"
+                data-image="image/ProjectMars.png">
+                Découvrir</button>
             </div>
           </div>
           <div class="RunMars card">
             <img src="image/MarsRun.png" width="100%" height="40%">
             <div class="cardInside">
+              <p class="card-GameStatus">Ended</p><br>
               <h3>Run on Mars</h3>
               <span>Infinite Runner - Unity</span>
               <p><br>Infinite Runner on Mars, with 2 gameplay</p>
               <!-- <a href="https://biocidee.itch.io/mars-run"><button>Découvrir</button></a> -->
-               <button id="buttonMarsRun">Découvrir</button>
+               <button class="buttonDiscover"
+               data-title="Mars Run" 
+               data-description="Petit infinite runner créer en 2 semaines pour une rendu de projet ! Animation et gameplay fais main ! Les assets viennent de 
+                                 Kenney ! Vous courez sur mars pour échaper au Alien ! Le jeu prossède 2 gameplay propre ! Une partis en tps et une en fps !"
+               data-image="image/MarsRun.png">
+               Découvrir</button>
             </div>
           </div>
           <div class="PowerOfDestruction card">
             <img src="image/PowerOfDestruction.png" width="100%" height="40%">
             <div class="cardInside">
+              <p class="card-GameStatus">Ended</p><br>
               <h3>Power Of D.</h3>
               <span>Horror - Unity</span>
               <p><br>Your giant ! Destroy all the city !</p>
               <!-- <a href="https://biocidee.itch.io/power-of-destruction"><button>Découvrir</button></a> -->
-               <button id="buttonPowerOfD">Découvrir</button>
+               <button class="buttonDiscover" 
+                data-title="Power Of Desctruction" 
+                data-description="Jeu réaliser pour une game jam ! En seulement 2 jours ! Prenez le contrôle d'un géant et détruiser toute la ville !"
+                data-image="image/PowerOfDestruction.png"
+                data-link="https://biocidee.itch.io/power-of-destruction">
+                Découvrir
+              </button>
             </div>
           </div>
           <div class="InProgress card">
             <img src="" width="100%" height="40%">
             <div class="cardInside">
+              <p class="card-GameStatus">In Progress</p><br>
               <h3>In Progress...</h3>
               <span>Horror - Unity</span>
               <p><br>Relive your favorite horror scenes</p>
@@ -154,10 +173,15 @@
     </footer>
 
     <div id="overlay">
-      <div id="popup">
-        <h3 id="popup-titre"></h3>
-        <p id="popup-description"></p>
-        <button id="popup-fermer">Fermer</button>
+      <div id="popup" class="popup">
+          <h1 id="popup-titre">Power Of Destruction</h1>
+          <p id="popup-description">Jeu réaliser pour une game jam ! En seulement 2 jours ! Prenez le contrôle d'un géant et détruiser toute la ville !
+          </p>
+          <img id="popup-image" src="image/PowerOfDestruction.png" width="400px">
+        <div>
+          <a href="" id="popup-link"><button>Découvrir</button></a>
+          <button id="popup-fermer">Fermer</button>
+        </div>
       </div>
     </div>
 
