@@ -4,10 +4,11 @@ var buttonPopup = document.getElementById("popup-fermer");
 var buttonDiscover = document.querySelectorAll(".buttonDiscover");
 var overlay = document.getElementById("overlay");
 
-function ouvrirPopup(_titre, _description, _image){
+function ouvrirPopup(_titre, _description, _image, _link){
     document.getElementById("popup-titre").textContent = _titre;
     document.getElementById("popup-description").textContent = _description;
     document.getElementById("popup-image").src = _image;
+    document.getElementById("popup-link").href = _link;
     overlay.style.display = "flex";
 }
 
@@ -18,7 +19,7 @@ buttonSeeGame.addEventListener("click", function() {
 
 buttonDiscover.forEach(function(bouton){
     bouton.addEventListener("click", function(){
-        ouvrirPopup(bouton.dataset.title, bouton.dataset.description, bouton.dataset.image);
+        ouvrirPopup(bouton.dataset.title, bouton.dataset.description, bouton.dataset.image, bouton.dataset.link);
     })
 })
 
