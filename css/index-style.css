@@ -346,6 +346,12 @@ footer a{
   width: 400px;
 }
 
+@media (max-width: 1000px) {
+  .card p {
+    display: none;
+  }
+}
+
 @media (max-width: 768px){
   body{
     padding-left: 1em;
