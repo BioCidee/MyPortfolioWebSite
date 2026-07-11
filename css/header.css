@@ -13,10 +13,6 @@ header nav {
   align-items: center;
 }
 
-header h1{
-    color: #f0ede8;
-}
-
 header a{
     color: #888888;
     text-decoration: none;
@@ -40,7 +36,23 @@ header ol {
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
+  gap: 2em;
+}
+
+@media (max-width: 768px){
+  header {
+    height: auto;
+  }
+
+  header nav{
+    justify-content: center;
+  }
+
+  header ol {
+    gap: 3em;
+  }
+
+  header h3{
+    display: none;
+  }
 }

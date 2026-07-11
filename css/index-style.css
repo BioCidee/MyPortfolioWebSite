@@ -186,7 +186,7 @@ button:hover {
   overflow: hidden;
 
   width: 250px;
-  height: 400px;
+  height: 350px;
   background-color: var(--secondBackgroundColor);
 
   border: 1px solid var(--borderColor);
@@ -214,7 +214,8 @@ button:hover {
 }
 
 .buttonDiscover {
-  position: relative;
+  position: absolute;
+  bottom: 20px;
   opacity: 0;
   scale: 0.7;
   
@@ -253,8 +254,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
 }
 
 .InProgress p{
@@ -344,4 +344,55 @@ footer a{
 
 .popup p {
   width: 400px;
+}
+
+@media (max-width: 1000px) {
+  .card p {
+    display: none;
+  }
+}
+
+@media (max-width: 768px){
+  body{
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  .presentation-photo {
+    display: none;
+  }
+
+  .myProject {
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0em;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+  }
+
+  .portfolio {
+    overflow: scroll;
+  }
+
+  .buttonDiscover {
+    scale: 1.5;
+    bottom: 30px;
+  }
+
+  .card:hover {
+    scale: 100%;
+  }
+
+  .Apropos {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .card:hover::before {
+  transform: translateY(74%);
+  z-index: 2;
+}
 }
