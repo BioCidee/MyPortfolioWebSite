@@ -379,6 +379,7 @@ footer a{
 
   .buttonDiscover {
     scale: 1.5;
+    bottom: 30px;
   }
 
   .card:hover {
@@ -389,4 +390,9 @@ footer a{
     flex-direction: column;
     gap: 1em;
   }
+
+  .card:hover::before {
+  transform: translateY(74%);
+  z-index: 2;
+}
 }
