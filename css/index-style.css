@@ -49,11 +49,11 @@ h1 {
   color: var(--textColor);
 }
 
-.presentation{
+.presentation {
   padding: 4em 0 0 4em;  
 }
 
-.presentation-all{
+.presentation-all {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -95,7 +95,7 @@ h1 {
 }
 
 .presentation-photo img {
- animation: profilePictureHorizontalGhost 5s ease-in-out infinite;
+  animation: profilePictureHorizontalGhost 5s ease-in-out infinite;
 }
 
 @keyframes monAnimation {
@@ -129,7 +129,7 @@ button:hover {
   background-color: var(--secondBackgroundColor);
 }
 
-.line{
+.line {
   width: 100%;
   height: 1;
   border: 0.2px solid var(--borderColor);
@@ -358,14 +358,42 @@ footer a{
     padding-right: 1em;
   }
 
+  .presentation {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
   .presentation-photo {
     display: none;
+  }
+
+  .competence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 1em;
+  }
+
+  .competence ul {
+    flex-direction: column;
+
+    width: 60%;
+  }
+
+  .competence li {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .myProject {
     flex-direction: column;
     align-items: center;
     margin: 1em 0em;
+
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .card {
@@ -389,6 +417,9 @@ footer a{
   .Apropos {
     flex-direction: column;
     gap: 1em;
+
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   .card:hover::before {
