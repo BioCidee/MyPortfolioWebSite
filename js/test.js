@@ -26,7 +26,3 @@ buttonDiscover.forEach(function(bouton){
 buttonPopup.addEventListener("click", function() {
     overlay.style.display = "none";
 })
-
-setTimeout(function(){
-    document.querySelector(".loading-image").classList.add("hidden");
-}, 2000)

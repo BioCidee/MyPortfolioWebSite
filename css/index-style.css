@@ -222,7 +222,7 @@ button:hover {
   transition: opacity 0.2s;
 }
 
-.card:hover button {
+.card:hover .buttonDiscover {
   opacity: 1;
   z-index: 3;
 
@@ -257,6 +257,10 @@ button:hover {
   padding: 1em;
 }
 
+.InProgress {
+  pointer-events: none;
+}
+
 .InProgress p{
   color: var(--textDisabledColor);
 }
@@ -268,20 +272,27 @@ button:hover {
 .Apropos {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .textPresentation {
   text-align:left;
+  width: 70%;
+  padding: 1em;
+}
+
+.petiteCase {
+  width: 80%;
+  margin-right: 4em;
 }
 
 .case {
   border: 1px solid var(--borderColor) ;
   border-radius: 10px;
-
+  
   background: var(--secondBackgroundColor);
 
-  padding: 1em;
+  padding: 1em 2em 1em 2em;
   margin-bottom: 1em;
 }
 
@@ -401,13 +412,18 @@ footer a{
     height: auto;
   }
 
+   .card:hover::before {
+    transform: translateY(60%);
+    z-index: 2;
+  }
+
   .portfolio {
     overflow: scroll;
   }
 
   .buttonDiscover {
-    scale: 1.5;
-    bottom: 30px;
+    scale: 1.2;
+    bottom: 3em;
   }
 
   .card:hover {
@@ -417,13 +433,13 @@ footer a{
   .Apropos {
     flex-direction: column;
     gap: 1em;
-
-    padding-left: 1em;
-    padding-right: 1em;
   }
 
-  .card:hover::before {
-  transform: translateY(74%);
-  z-index: 2;
-}
+  footer {
+    flex-direction: column;
+  }
+
+  #popup {
+    width: 70%;
+  }
 }

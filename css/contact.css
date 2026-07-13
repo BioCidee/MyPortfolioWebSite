@@ -13,37 +13,6 @@ body {
   padding-right: 3em;
 }
 
-@keyframes logoRotate {
-  20% {rotate: 0deg;}
-  100% {rotate: 360deg;} 
-}
-
-.loading-image {
-  animation: logoRotate 2s linear 1;
-  position:absolute;
-  top: 20%;
-  left: 35%;
-  opacity: 1;
-
-  z-index: 12;
-}
-
-.loading-background {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  z-index: 11;
-  background-color: #0a0a0a;
-}
-
-.hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
 span {
   color: #b91c1c;
 }
