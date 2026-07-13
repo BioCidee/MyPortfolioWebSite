@@ -40,6 +40,10 @@ header ol {
 }
 
 @media (max-width: 768px){
+  header {
+    font-size: 0.8em;
+  }
+
   header ol {
     gap: 1.3em;
   }
