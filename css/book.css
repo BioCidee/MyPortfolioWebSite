@@ -9,20 +9,48 @@
 }
 
 .lecture {
-    height: 800px;
+    height: 900px;
 }
 
 .book {
     width: 20%;
-    height: 200px;
+    max-height: auto;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+   
+    background-color: var(--secondBackgroundColor);
+    border: var(--borderColor) 1px solid;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.book .note {
+    color: var(--textImportantColor);
 }
 
 .bibliotheque {
     margin: 2em;
     gap: 2em;
     display: flex;
+
+    overflow-x: auto;
+}
+
+.book-autor-title {
+    min-height: 6em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.book img {
+    width:200px; 
+    height:300px;
+
+    object-fit: cover;
+    align-self: center;
+
+    padding: 0.8em;
 }
