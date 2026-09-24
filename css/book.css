@@ -1,0 +1,58 @@
+:root {
+  --textColor : #f0ede8;
+  --textImportantColor: #b91c1c;
+  --textNormalColor: #888888;
+  --borderColor: #2a2a2a;
+  --backgroundColor: #0a0a0a;
+  --secondBackgroundColor: #111111;
+  --textDisabledColor: #555555; 
+}
+
+.lecture {
+    height: 900px;
+}
+
+.book {
+    width: 20%;
+    max-height: auto;
+
+    display: flex;
+    flex-direction: column;
+   
+    background-color: var(--secondBackgroundColor);
+    border: var(--borderColor) 1px solid;
+    border-radius: 20px;
+    padding: 2em;
+}
+
+.book .note {
+    color: var(--textImportantColor);
+}
+
+.bibliotheque::-webkit-scrollbar {
+    display: none;
+}
+
+.bibliotheque {
+    margin: 2em;
+    gap: 2em;
+    display: flex;
+
+    overflow-x: auto;
+}
+
+.book-autor-title {
+    min-height: 6em;
+
+ text-align: center;
+}
+
+.book img {
+    width:200px; 
+    height:300px;
+
+    object-fit: cover;
+    align-self: center;
+
+    padding: 0.8em;
+}
